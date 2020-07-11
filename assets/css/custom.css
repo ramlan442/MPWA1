@@ -1,0 +1,116 @@
+main {
+  min-height: calc(100vh - 64px - 182px);
+}
+.container-loader{
+  height: calc(100vh - 64px - 182px);
+  display: table;
+  width: 100%;
+}
+.container-loader .center-loader {
+  display: table-cell;
+  vertical-align: middle;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  margin: 0 auto;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+nav .brand-logo {
+  left: 3vh;
+}
+.hometext {
+  height: 30vw;
+  width: 100%;
+  display: table;
+}
+.hometext .center {
+  display: table-cell;
+  vertical-align: middle;
+}
+.justify {
+  text-align: justify;
+}
+tr {
+  border-bottom: none;
+}
+.box {
+  margin: 5vh 0.5vw;
+  background-color: rgb(255, 255, 255);
+  min-height: 30vw;
+  padding: 20px;
+  border-radius: 10px;
+}
+td {
+  padding: unset;
+}
+.bio {
+  max-width: 15px;
+}
+.quote-box {
+  max-width: 90%;
+  margin: 20px auto 0px auto;
+  padding: 20px;
+}
+.quote-box p {
+  padding: 20px;
+}
+.quote-box h3 {
+  padding: 5px;
+}
+.caption-title {
+  margin: 3vh 4vh 2vh 4vh;
+  max-height: 20vh;
+  border-radius: 0px 13px 0px 13px;
+  background: #e3e5ea36;
+}
+.caption-title p {
+  color: black;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-size: 1.5vh;
+  padding: 2.5vh;
+  max-height: 10vh;
+}
+.name-title h3 {
+  color: black;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  padding: 7px;
+}
+.caption-title::before {
+  content: '\201C ';
+  font-size: 4vh;
+  text-align: left !important;
+  display: block;
+  height: 0px;
+  margin-left: 0.6vh;
+}
+.caption-title::after {
+  content: '\201D ';
+  font-size: 4vh;
+  text-align: right !important;
+  display: block;
+  height: 2.6vh;
+  margin-right: 0.6vh;
+}
+@media screen and (max-width: 992px) {
+  nav .brand-logo {
+    left: 50%;
+  }
+}
