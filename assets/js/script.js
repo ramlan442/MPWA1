@@ -2,7 +2,7 @@
 if ('serviceWorker' in navigator) {
   $(window).on('load', () => {
     navigator.serviceWorker
-      .register('/sw.js')
+      .register('sw.js')
       .then(function () {
         console.log('Pendaftaran ServiceWorker berhasil');
       })
