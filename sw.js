@@ -1,20 +1,6 @@
-const CACHE_NAME_STATIC = 'static-v12';
-const CACHE_NAME_DYNAMIC = 'dynamic-v12';
-var urlsToCache = [
-  '/',
-  '/favicon.ico',
-  '/index.html',
-  '/halaman/home.html',
-  '/halaman/about.html',
-  '/halaman/nav.html',
-  '/halaman/profile.html',
-  '/assets/img/nocache.jpg',
-  '/halaman/more.html',
-  '/halaman/error.html',
-  '/assets/js/script.js',
-  'https://fonts.googleapis.com/icon?family=Material+Icons',
-  'https://fonts.gstatic.com/s/materialicons/v47/flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2',
-];
+const CACHE_NAME_STATIC = 'static-v1';
+const CACHE_NAME_DYNAMIC = 'dynamic-v1';
+const urlsToCache = ['/', '/halaman/error.html', '/assets/img/nocache.jpg'];
 
 self.addEventListener('install', function (event) {
   event.waitUntil(

@@ -18,6 +18,18 @@ if ('serviceWorker' in navigator) {
 $(document).ready(() => {
   loadPages();
 
+  //check cache
+  caches
+    .keys()
+    .then((key) => {
+      if (key.length > 1) {
+        console.log('sudah ada cache dynamic');
+      } else {
+        $('.modal').modal().modal('open');
+      }
+    })
+    .catch(() => console.log('error'));
+
   //event material
   $('.sidenav').sidenav();
 });
@@ -53,7 +65,6 @@ function loadPages() {
       document.querySelectorAll('.homenav a, .sidenav a').forEach(function (ev) {
         ev.addEventListener('click', function (el) {
           loader.style.display = 'table';
-          console.log(xhttp);
           xhttp.open('GET', 'halaman/' + this.hash.substr(1) + '.html', true);
           xhttp.send();
 

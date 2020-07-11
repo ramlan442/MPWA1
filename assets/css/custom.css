@@ -1,7 +1,7 @@
 main {
   min-height: calc(100vh - 64px - 182px);
 }
-.container-loader{
+.container-loader {
   height: calc(100vh - 64px - 182px);
   display: table;
   width: 100%;
@@ -23,13 +23,21 @@ main {
 
 /* Safari */
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 nav .brand-logo {
   left: 3vh;
@@ -92,6 +100,10 @@ td {
   text-transform: uppercase;
   letter-spacing: 3px;
   padding: 7px;
+}
+.img-modal {
+  display: block;
+  margin: 0 auto;
 }
 .caption-title::before {
   content: '\201C ';

@@ -9,15 +9,15 @@
       media="screen,projection"
     />
     <link type="text/css" rel="stylesheet" href="assets/css/custom.css" />
-<link rel="manifest" href="manifest.json">
-<link rel="icon" href="favicon.ico" type="image/png">
- <meta charset="UTF-8">
-<meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="application-name" content="MPWA">
-<meta name="apple-mobile-web-app-title" content="MPWA">
-<meta name="msapplication-starturl" content="/">
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="manifest.json" />
+    <link rel="icon" href="favicon.ico" type="image/png" />
+    <meta charset="UTF-8" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="MPWA" />
+    <meta name="apple-mobile-web-app-title" content="MPWA" />
+    <meta name="msapplication-starturl" content="/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
   </head>
   <body>
     <!-- Desktop Navbar -->
@@ -36,13 +36,31 @@
     <ul class="sidenav" id="mobile-demo"></ul>
     <!-- kontent -->
     <main>
-      <div class="container-loader" style="display: none">
+      <div class="container-loader" style="display: none;">
         <div class="center-loader">
-        <div class="loader"></div>
+          <div class="loader"></div>
         </div>
       </div>
       <div class="body-content container"></div>
     </main>
+
+    <!-- modal prompt cache -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <img class="responsive-img center img-modal" src="assets/img/no.png" width="20%" />
+        <h4>Uppsss...</h4>
+        <p>
+          Cache Static Berhasil Terpasang, Namun Cache Dynamic Belum, Silahkan Lakukan Reload /
+          Refresh Halaman
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a class="waves-effect waves-light btn" onclick="location.reload()"
+          ><i class="material-icons left">refresh</i>Refresh</a
+        >
+      </div>
+    </div>
+
     <!-- footer -->
     <footer class="page-footer teal accent-4">
       <div class="container">
@@ -60,6 +78,7 @@
       </div>
     </footer>
     <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="assets/js/materialize.js"></script>
     <script type="text/javascript" src="assets/js/materialize.min.js"></script>
     <script type="text/javascript" src="assets/js/script.js"></script>
   </body>
