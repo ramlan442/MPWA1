@@ -1,6 +1,6 @@
 const CACHE_NAME_STATIC = 'static-v1';
 const CACHE_NAME_DYNAMIC = 'dynamic-v1';
-const urlsToCache = ['/', '/halaman/error.html', '/assets/img/nocache.jpg'];
+const urlsToCache = ['/', 'halaman/error.html', 'assets/img/nocache.jpg'];
 
 self.addEventListener('install', function (event) {
   event.waitUntil(
@@ -39,10 +39,10 @@ self.addEventListener('fetch', function (event) {
       })
       .catch(function () {
         if (event.request.url.indexOf('.html') > -1) {
-          return caches.match('/halaman/error.html');
+          return caches.match('halaman/error.html');
         }
         if (event.request.url.indexOf('.jpg') > -1 || event.request.url.indexOf('.png') > -1) {
-          return caches.match('/assets/img/nocache.jpg');
+          return caches.match('assets/img/nocache.jpg');
         }
       })
   );
