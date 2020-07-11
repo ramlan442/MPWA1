@@ -1,6 +1,6 @@
 const CACHE_NAME_STATIC = 'static-v1';
 const CACHE_NAME_DYNAMIC = 'dynamic-v1';
-const urlsToCache = ['/', '/MPWA1/halaman/error.html', '/MPWA1/assets/img/nocache.jpg'];
+const urlsToCache = ['/MPWA1/', '/MPWA1/halaman/error.html', '/MPWA1/assets/img/nocache.jpg'];
 
 self.addEventListener('install', function (event) {
   event.waitUntil(
